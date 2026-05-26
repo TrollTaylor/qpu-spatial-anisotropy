@@ -30,7 +30,8 @@ pip install -r requirements.txt
 ```
 
 ## 3. Usage Guidelines
-  ### 3.1 Hardware DeploymentThe primary execution script, qpu_anisotropy_sweep.py, is configured for direct hardware interaction.
+  ### 3.1 Hardware Deployment 
+  #### The primary execution script, qpu_anisotropy_sweep.py, is configured for direct hardware interaction.
    1. Configure: Edit the TARGET_SYSTEM variable at the top of the script to match your specific QPU substrate (e.g., 'ibm_nairobi').
    2. Execute: Run the sweep directly via terminal:
   
