@@ -31,8 +31,10 @@ cd qpu-anisotropy-suite
 pip install -r requirements.txt
 ```
 
-3. Usage Guidelines
+## 3. Usage Guidelines
 3.1 Hardware DeploymentThe primary execution script, qpu_anisotropy_sweep.py, is configured for direct hardware interaction.Configure: Edit the TARGET_SYSTEM variable at the top of the script to match your specific QPU substrate (e.g., 'ibm_nairobi').Execute: Run the sweep directly via terminal:Bashpython qpu_anisotropy_sweep.py
 Hardware Mandate: Ensure all automated software readout error mitigation (REM) layers are explicitly bypassed in your environment, as these algorithms will systematically average out the geometric signal of interest.
-4. Analytical OutputsUpon execution, the diagnostic engine generates two primary artifacts:hardware_anisotropy_sweep_data.csv: A raw, unweighted count ledger recording registration counts ($n_{00}, n_{11}, n_{01}, n_{10}$) alongside absolute laboratory orientation angles ($\phi$).spatial_anisotropy_residual_map.png: A comparative mapping plot displaying physical raw telemetry against the standard isotropic null hypothesis baseline and the anisotropic SME target model.
-5. 5. References[1] L. Shalm, et al. "A strong loophole-free test of local realism." Physical Review Letters (2015).[2] R. D. Gill. "Optimal statistical analyses of Bell experiments." arXiv:2209.00702 [quant-ph] (2023).[3] D. Kostelecký and N. Russell. "Data Tables for Lorentz and CPT Violation." Reviews of Modern Physics.
+
+## 4. Analytical OutputsUpon execution, the diagnostic engine generates two primary artifacts:hardware_anisotropy_sweep_data.csv: A raw, unweighted count ledger recording registration counts ($n_{00}, n_{11}, n_{01}, n_{10}$) alongside absolute laboratory orientation angles ($\phi$).spatial_anisotropy_residual_map.png: A comparative mapping plot displaying physical raw telemetry against the standard isotropic null hypothesis baseline and the anisotropic SME target model.
+
+## 5. References[1] L. Shalm, et al. "A strong loophole-free test of local realism." Physical Review Letters (2015).[2] R. D. Gill. "Optimal statistical analyses of Bell experiments." arXiv:2209.00702 [quant-ph] (2023).[3] D. Kostelecký and N. Russell. "Data Tables for Lorentz and CPT Violation." Reviews of Modern Physics.
