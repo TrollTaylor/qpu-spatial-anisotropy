@@ -22,8 +22,8 @@ This package requires Python 3.9+ and standard scientific data manipulation stac
 
 ```bash
 # Clone the operational toolkit
-git clone [https://github.com/yourusername/qpu-anisotropy-suite.git](https://github.com/yourusername/qpu-anisotropy-suite.git)
-cd qpu-anisotropy-suite
+git clone https://github.com/TrollTaylor/qpu-spatial-anisotropy
+cd qpu-spatial-anisotropy
 
 # Install requisite packages
 pip install -r requirements.txt
